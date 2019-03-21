@@ -1,0 +1,22 @@
+html
+<div class="content">
+        <div class="termDate">
+            <ul>
+                <li> 第一学期：<time datetime="2019-9-9">2019 年 9 月 9 日</time></li>
+                <li> 第二学期：2020 年 1 月 15 日</li>
+                <li> 第三学期：2020 年 5 月 2 日</li>
+            </ul>
+        </div>
+</div>
+css 
+.content .termDate ul li{
+list-style: none; 
+counter-increment: number;
+}  
+.content .termDate  ul li::before{ 
+content:counter(number,disc);
+display:inline-block;
+vertical-align: middle;
+font-size:30px;
+}
+
